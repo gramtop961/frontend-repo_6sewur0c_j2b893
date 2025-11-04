@@ -17,25 +17,27 @@ const SocialLink = ({ href, Icon, label }) => (
 
 export default function Hero3D() {
   return (
-    <section id="home" className="relative isolate overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+    <section id="home" className="relative isolate overflow-hidden bg-slate-950">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_50%_at_70%_20%,rgba(168,85,247,0.18),transparent),radial-gradient(40%_40%_at_20%_10%,rgba(59,130,246,0.15),transparent)]" />
+
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 py-20 sm:py-24 md:grid-cols-2 lg:gap-14">
         {/* Copy */}
         <div className="relative z-10 space-y-6 text-left">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70 backdrop-blur">
-            <Rocket className="h-3.5 w-3.5 text-cyan-400" />
-            <span>CS Engineering Student • Tech Enthusiast</span>
+            <Rocket className="h-3.5 w-3.5 text-fuchsia-400" />
+            <span>CS Engineer • Robotics & AI</span>
           </div>
           <h1 className="font-display text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-6xl">
-            Crafting playful, interactive, and modern digital experiences
+            Building futuristic, playful, and intelligent experiences
           </h1>
           <p className="max-w-xl text-base text-white/70 sm:text-lg">
-            I build performant web apps, explore systems, and love shipping ideas end‑to‑end.
-            Dive into my projects, roles, internships, and achievements below.
+            I craft interactive web apps, explore robotics and AI systems, and love shipping ideas end‑to‑end.
+            Meet my AI robot companion below and explore my projects, internships, and achievements.
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <a
               href="#projects"
-              className="inline-flex items-center justify-center rounded-full bg-cyan-500 px-5 py-3 text-sm font-medium text-slate-950 shadow-lg shadow-cyan-500/30 transition hover:brightness-110"
+              className="inline-flex items-center justify-center rounded-full bg-fuchsia-500 px-5 py-3 text-sm font-medium text-slate-950 shadow-lg shadow-fuchsia-500/30 transition hover:brightness-110"
             >
               See Projects
             </a>
@@ -56,11 +58,11 @@ export default function Hero3D() {
         {/* 3D Scene */}
         <div className="relative h-[60vh] w-full rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900 to-slate-800 shadow-2xl md:h-[70vh]">
           <Spline
-            scene="https://prod.spline.design/VJLoxp84lCdVfdZu/scene.splinecode"
+            scene="https://prod.spline.design/lUfiWve0vh3E-uKW/scene.splinecode"
             style={{ width: '100%', height: '100%' }}
           />
           {/* Soft gradient glow, doesn't block interaction */}
-          <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-tr from-cyan-500/10 via-fuchsia-500/5 to-transparent" />
+          <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-tr from-fuchsia-500/10 via-cyan-500/5 to-transparent" />
         </div>
       </div>
     </section>
